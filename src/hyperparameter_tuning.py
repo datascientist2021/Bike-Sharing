@@ -10,16 +10,16 @@ import os
 
 filename = os.path.basename(__file__)
 
-day_X_train = pd.read_csv('assets\split_data\day_X_train.csv')
-day_X_test = pd.read_csv("assets\split_data\day_X_test.csv")
-day_y_train = pd.read_csv("assets\split_data\day_y_train.csv")
-day_y_test = pd.read_csv("assets\split_data\day_y_test.csv")
+day_X_train = pd.read_csv('assets/split_data/day_X_train.csv')
+day_X_test = pd.read_csv("assets/split_data/day_X_test.csv")
+day_y_train = pd.read_csv("assets/split_data/day_y_train.csv")
+day_y_test = pd.read_csv("assets/split_data/day_y_test.csv")
 day = [day_X_train, day_X_test, day_y_train, day_y_test]
 
-hour_X_train = pd.read_csv('assets\split_data\hour_X_train.csv')
-hour_X_test = pd.read_csv("assets\split_data\hour_X_test.csv")
-hour_y_train = pd.read_csv("assets\split_data\hour_y_train.csv")
-hour_y_test = pd.read_csv("assets\split_data\hour_y_test.csv")
+hour_X_train = pd.read_csv('assets/split_data/hour_X_train.csv')
+hour_X_test = pd.read_csv("assets/split_data/hour_X_test.csv")
+hour_y_train = pd.read_csv("assets/split_data/hour_y_train.csv")
+hour_y_test = pd.read_csv("assets/split_data/hour_y_test.csv")
 hour = [hour_X_train, hour_X_test, hour_y_train, hour_y_test]
 
 day_parameters={'n_estimators':[int(x) for x in np.linspace(50,2000,200)],

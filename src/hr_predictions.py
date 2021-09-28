@@ -76,7 +76,7 @@ class hour_predictions:
 
             new = pd.concat([num, dat], axis=1)
 
-            file = open("assets\saved_models\hour.sav", 'rb')
+            file = open("assets/saved_models/hour.sav", 'rb')
             model = pickle.load(file)
             self.logger_object.log(self.file_object, 'Predicting the output for user input using hour.sav')
             result = model.predict(new)

@@ -73,7 +73,7 @@ class day_predictions:
 
             new = pd.concat([num, dat], axis=1)
 
-            file = open("assets\saved_models\day.sav", 'rb')
+            file = open("assets/saved_models/day.sav", 'rb')
             model = pickle.load(file)
 
             self.logger_object.log(self.file_object, 'Predicting the output for user input using day.sav')

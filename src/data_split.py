@@ -9,8 +9,8 @@ filename = os.path.basename(__file__)
 
 preprocess()
 
-day = pd.read_csv("assets\processed_data\processed_day.csv")
-hour = pd.read_csv("assets\processed_data\processed_hour.csv")
+day = pd.read_csv("assets/processed_data/processed_day.csv")
+hour = pd.read_csv("assets/processed_data/processed_hour.csv")
 
 TEST_SIZE = 0.3
 
