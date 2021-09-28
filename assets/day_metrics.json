@@ -1,0 +1,22 @@
+[
+ {
+  "model_name": "Linear Regression",
+  "r_squared": 0.7082545653922594,
+  "rmse": 607.3280651858413
+ },
+ {
+  "model_name": "Decision Tree Regression",
+  "r_squared": 0.5864677988627041,
+  "rmse": 722.263946181998
+ },
+ {
+  "model_name": "Random Forest Regression",
+  "r_squared": 0.7940839353347326,
+  "rmse": 510.90709786411554
+ },
+ {
+  "model_name": "Extra Trees Regression",
+  "r_squared": 0.8023172276285839,
+  "rmse": 519.0221413346883
+ }
+]

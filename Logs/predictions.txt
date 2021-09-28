@@ -1,0 +1,47 @@
+2021-09-26/20:52:03		Current Script: day_predictions.py
+2021-09-26/20:52:03		Entered the class: day_predictions
+2021-09-26/20:52:03		Entered the function: predict of the class: day_predictions
+2021-09-26/20:52:04		Predicting the output for user input using day.sav
+2021-09-26/20:52:04		Exited the function: predict of the class: day_predictions
+2021-09-26/20:52:28		Current Script: hr_predictions.py
+2021-09-26/20:52:28		Entered the class: hour_predictions
+2021-09-26/20:52:28		Entered the function: predict of the class: hour_predictions
+2021-09-26/20:52:28		Predicting the output for user input using hour.sav
+2021-09-26/20:52:28		Exited the function: predict of the class: hour_predictions
+2021-09-28/10:34:28		Current Script: day_predictions.py
+2021-09-28/10:34:28		Entered the class: day_predictions
+2021-09-28/10:34:28		Entered the function: predict of the class: day_predictions
+2021-09-28/10:34:41		Exception occured in predict method of day_predictions class. Exception message: No module named 'joblib'
+2021-09-28/10:34:52		Current Script: day_predictions.py
+2021-09-28/10:34:52		Entered the class: day_predictions
+2021-09-28/10:34:52		Entered the function: predict of the class: day_predictions
+2021-09-28/10:34:52		Exception occured in predict method of day_predictions class. Exception message: No module named 'joblib'
+2021-09-28/10:35:15		Current Script: hr_predictions.py
+2021-09-28/10:35:15		Entered the class: hour_predictions
+2021-09-28/10:35:15		Entered the function: predict of the class: hour_predictions
+2021-09-28/10:35:16		Exception occured in predict method of hour_predictions class. Exception message: No module named 'joblib'
+2021-09-28/10:49:10		Current Script: day_predictions.py
+2021-09-28/10:49:10		Entered the class: day_predictions
+2021-09-28/10:49:10		Entered the function: predict of the class: day_predictions
+2021-09-28/10:50:12		Predicting the output for user input using day.sav
+2021-09-28/10:50:13		Exited the function: predict of the class: day_predictions
+2021-09-28/10:51:30		Current Script: day_predictions.py
+2021-09-28/10:51:30		Entered the class: day_predictions
+2021-09-28/10:51:30		Entered the function: predict of the class: day_predictions
+2021-09-28/10:51:30		Predicting the output for user input using day.sav
+2021-09-28/10:51:30		Exited the function: predict of the class: day_predictions
+2021-09-28/10:52:34		Current Script: hr_predictions.py
+2021-09-28/10:52:34		Entered the class: hour_predictions
+2021-09-28/10:52:34		Entered the function: predict of the class: hour_predictions
+2021-09-28/10:53:49		Predicting the output for user input using hour.sav
+2021-09-28/10:53:49		Exited the function: predict of the class: hour_predictions
+2021-09-28/23:22:39		Current Script: day_predictions.py
+2021-09-28/23:22:39		Entered the class: day_predictions
+2021-09-28/23:22:39		Entered the function: predict of the class: day_predictions
+2021-09-28/23:22:41		Predicting the output for user input using day.sav
+2021-09-28/23:22:41		Exited the function: predict of the class: day_predictions
+2021-09-28/23:22:59		Current Script: hr_predictions.py
+2021-09-28/23:22:59		Entered the class: hour_predictions
+2021-09-28/23:22:59		Entered the function: predict of the class: hour_predictions
+2021-09-28/23:22:59		Predicting the output for user input using hour.sav
+2021-09-28/23:22:59		Exited the function: predict of the class: hour_predictions
