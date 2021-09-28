@@ -45,3 +45,8 @@
 2021-09-28/23:22:59		Entered the function: predict of the class: hour_predictions
 2021-09-28/23:22:59		Predicting the output for user input using hour.sav
 2021-09-28/23:22:59		Exited the function: predict of the class: hour_predictions
+2021-09-29/00:20:20		Current Script: day_predictions.py
+2021-09-29/00:20:20		Entered the class: day_predictions
+2021-09-29/00:20:20		Entered the function: predict of the class: day_predictions
+2021-09-29/00:20:23		Predicting the output for user input using day.sav
+2021-09-29/00:20:23		Exited the function: predict of the class: day_predictions
