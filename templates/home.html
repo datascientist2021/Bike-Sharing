@@ -10,11 +10,16 @@
     <table class="table">
 
         <tbody>
+            <center> <img src="{{ url_for('static', filename='bike.jpg') }}", style="margin-top: 1.5%; margin-bottom: -3.0%; width:45%; height: 45%"></center>
             <tr>
-                <td><img src="{{ url_for('static', filename='bike.jpg') }}", width="450" height="250"></td>
+                <!--  height="250" -->
+                <!-- <td><img src="{{ url_for('static', filename='bike.jpg') }}", width="455px" height="250px"></td> -->
 
-                <td>
-                    <p class="overflow-auto" style="text-align:justify; max-height: 300px" >
+                <td colspan="2"  >
+
+                    <!-- <center> <img src="{{ url_for('static', filename='bike.jpg') }}", style=" width:40%; height: 40%"></center> -->
+                    
+                    <p class="overflow-auto" style="margin-top: 0.5%; text-align:justify; max-height: 300px" >
                     Bike sharing systems are a new generation of traditional bike rentals where the whole
                     process from membership, rental and return back has become automatic. Through
                     these systems, users are able to easily rent a bike from a particular position and return
@@ -30,10 +35,11 @@
                     </p>
                 </td>
             </tr>
+
             <tr>
                 <td colspan="2" style="text-align: center;">
-                    <a class="btn btn-primary btn-lg" style="margin: 25px 100px 25px 100px;" href="{{ url_for('day_prediction') }}">Daily Count</a>
-                    <a class="btn btn-primary btn-lg" style="margin: 25px 100px 25px 100px;" href="{{ url_for('hour_prediction') }}">Hourly Count</a>
+                    <a type="button" class="btn btn-primary btn-lg" style="margin: 15px 100px 25px 100px;" href="{{ url_for('day_prediction') }}">Daily Count</a>
+                    <a type="button" class="btn btn-primary btn-lg" style="margin: 15px 100px 25px 100px;" href="{{ url_for('hour_prediction') }}">Hourly Count</a>
                 </td>
             </tr>
 
