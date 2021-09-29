@@ -48,7 +48,7 @@ class day_predictions:
 
             new_number = lst
             data_new = pd.DataFrame(new_number)
-            print(data_new)
+            # print(data_new)
             data_new.columns = ['season', 'mnth', 'holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'hum', 'windspeed']
 
             data_new.columns = [f"season_{data_new['season'][0]}", f"mnth_{data_new['mnth'][0]}",

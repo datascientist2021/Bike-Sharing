@@ -50,7 +50,7 @@ class hour_predictions:
             new_number = lst
             # new_number = [temp, hum, windspeed, season, mnth, holiday, weekday,workingday, weathersit]
             data_new = pd.DataFrame(new_number)
-            print(data_new)
+            # print(data_new)
             # data_new=data_new.T
             data_new.columns = ['season', 'mnth','hr', 'holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'hum', 'windspeed']
 

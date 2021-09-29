@@ -66,16 +66,16 @@ class hyperparametertuning:
             rfm = RandomizedSearchCV(estimator=model_rf, param_distributions=params, cv=5, n_iter=30, n_jobs=-1, verbose=5, random_state=2)
             self.logger_object.log(self.file_object, "End of hyperparameter tuning")
             rfm.fit(lst[0], lst[2])
-            print(rfm.best_score_)
+            # print(rfm.best_score_)
             rfmod = rfm.best_estimator_
 
             rfmod.fit(lst[0], lst[2])
 
             ypred=rfmod.predict(lst[0])
-            print(r2_score(lst[2], ypred))
+            # print(r2_score(lst[2], ypred))
 
             ypred1=rfmod.predict(lst[1])
-            print(r2_score(lst[3], ypred1))
+            # print(r2_score(lst[3], ypred1))
             self.logger_object.log(self.file_object, f'Exited the function: {self.funcname} of the class: {self.classname}')
             return rfmod
         except Exception as e:
