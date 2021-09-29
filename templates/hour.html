@@ -20,7 +20,7 @@ Hour Data Prediction
 
                     <div class="col">
                             <label for="season">Season</label><br>
-                        <select class="form-control" name="season" >
+                        <select class="form-control" name="season" required>
                             <option class="input-text text-muted" value=""> Select Season</option>
                             <option class="text-primary" value="1">Springer</option>
                             <option class="text-primary" value="2">Summer</option>
@@ -34,7 +34,7 @@ Hour Data Prediction
 
                         <div class="col">
                             <label for="mnth">Month</label><br>
-                            <select class="form-control" name="mnth" >
+                            <select class="form-control" name="mnth" required>
                                 <option class="input-text text-muted" value=""> Select Month</option>
                                 <option class="text-primary" value="1">January</option>
                                 <option class="text-primary" value="2">February</option>
@@ -54,7 +54,7 @@ Hour Data Prediction
 
                         <div class="col">
                             <label for="hr">Hour</label><br>
-                            <select class="form-control" name="hr" >
+                            <select class="form-control" name="hr" required>
                                 <option class="input-text text-muted" value=""> Select Hour</option>
                                 <option class="text-primary" value="0">12 AM</option>
                                 <option class="text-primary" value="1">1 AM</option>
@@ -85,7 +85,7 @@ Hour Data Prediction
 
                         <div class="col">
                             <label for="holiday">Holiday</label><br>
-                            <select class="form-control" name="holiday" >
+                            <select class="form-control" name="holiday" required>
                                 <option class="input-text text-muted" value=""> Select Holiday</option>
                                 <option class="text-primary"  value="0">Not Holiday</option>
                                 <option class="text-primary" value="1">Holiday</option>
@@ -93,7 +93,7 @@ Hour Data Prediction
 
                         <div class="col">
                             <label for="weekday">Weekday</label><br>
-                            <select class="form-control" name="weekday" >
+                            <select class="form-control" name="weekday" required>
                                 <option class="input-text text-muted" value=""> Select Weekday</option>
                                 <option class="text-primary" value="0">Sunday</option>
                                 <option class="text-primary" value="1">Monday</option>
@@ -111,7 +111,7 @@ Hour Data Prediction
 
                         <div class="col">
                             <label for="workingday">Working Day</label><br>
-                            <select class="form-control" name="workingday" >
+                            <select class="form-control" name="workingday" required>
                                 <option class="input-text text-muted" value=""> Select Working Day</option>
                                 <option class="text-primary" value="0">Not Working Day</option>
                                 <option class="text-primary" value="1">Working Day</option>
@@ -120,7 +120,7 @@ Hour Data Prediction
 
                         <div class="col">
                             <label for="weathersit">Weather</label><br>
-                            <select class="form-control" name="weathersit" >
+                            <select class="form-control" name="weathersit" required>
                                 <option class="input-text text-muted" value=""> Select Weather</option>
                                 <option class="text-primary"  value="1">Clear</option>
                                 <option class="text-primary" value="2">Cloudy</option>
@@ -131,16 +131,16 @@ Hour Data Prediction
 
                         <div class="col">
                             <label for="temp">Temperature</label><br>
-                            <input type="text" id="temp" name="temp" class="form-control" placeholder="Temperature ( ﾟC )" value="{{ request.form['temp'] }}">
+                            <input type="text" id="temp" name="temp" class="form-control" placeholder="Temperature ( ﾟC )" value="{{ request.form['temp'] }}" required>
                         </div>
 
                         <div class="col">
                             <label for="humidity">Humidity</label><br>
-                            <input type="text" id="humidity" name="humidity" class="form-control" placeholder="Humidity ( % )" value="{{ request.form['humidity'] }}">
+                            <input type="text" id="humidity" name="humidity" class="form-control" placeholder="Humidity ( % )" value="{{ request.form['humidity'] }}" required>
                         </div>
                         <div class="col">
                             <label for="windspeed">Wind Speed</label><br>
-                            <input type="text" id="windspeed" name="windspeed" class="form-control" placeholder="Wind Speed (kmph)" value="{{ request.form['windspeed'] }}">
+                            <input type="text" id="windspeed" name="windspeed" class="form-control" placeholder="Wind Speed (kmph)" value="{{ request.form['windspeed'] }}" required>
                         </div>
                     </div>
                     <div class="row">
