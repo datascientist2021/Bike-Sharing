@@ -47,14 +47,12 @@ def day_res():
                 'windspeed': windspeed,
             }
         ]
-        headersCSV = ['season','mnth','holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'humidity', 'windspeed']      
+        headersCSV = ['season','mnth','holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'humidity', 'windspeed','casual', 'registered','count']      
 
-        with open(r"assets\user_input\day_input.csv", "a", newline='') as f_object:
-            dictwriter_object = DictWriter(f_object, fieldnames=headersCSV)
-            dictwriter_object.writerow(day_form_data[0])
-            f_object.close()
+        
 
         result = day_predictions().predict(day_form_data)
+       
         # print(result)
         # print(pd.DataFrame(form_data))
         casual = int(result[0][0])
@@ -66,7 +64,16 @@ def day_res():
                 'count': casual + registered
             }
         ]
+
+        z1 = day_form_data[0] | day_res[0]
+
+        with open(r"assets\user_input\day_input.csv", "a", newline='') as f_object:
+            dictwriter_object = DictWriter(f_object, fieldnames=headersCSV)
+            dictwriter_object.writerow(z1)
+            f_object.close()
+
     return render_template('day.html', data=day_res)
+    
     
 
 @app.route('/hour')
@@ -102,12 +109,9 @@ def hour_res():
                 'windspeed': windspeed,
             }
         ]
-        headersCSV = ['season','mnth','hr','holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'humidity', 'windspeed']      
+        headersCSV = ['season','mnth','hr','holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'humidity', 'windspeed','casual', 'registered','count']      
 
-        with open(r"assets\user_input\hour_input.csv", "a", newline='') as f_object:
-            dictwriter_object = DictWriter(f_object, fieldnames=headersCSV)
-            dictwriter_object.writerow(hour_form_data[0])
-            f_object.close()
+        
 
         result = hour_predictions().predict(hour_form_data)
         
@@ -120,6 +124,15 @@ def hour_res():
                 'count': casual + registered
             }
         ]
+
+
+        z = hour_form_data[0] | hour_res[0]
+
+        with open(r"assets\user_input\hour_input.csv", "a", newline='') as f_object:
+            dictwriter_object = DictWriter(f_object, fieldnames=headersCSV)
+            dictwriter_object.writerow(z)
+            f_object.close()
+
     return render_template('hour.html', data=hour_res)
 
 if __name__ == "__main__":
